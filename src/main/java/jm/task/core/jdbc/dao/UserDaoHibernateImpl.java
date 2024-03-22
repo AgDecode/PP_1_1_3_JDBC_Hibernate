@@ -11,8 +11,8 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class UserDaoHibernateImpl implements UserDao {
-    private final SessionFactory sessionFactory = Util.Hibernate.getSessionFactory();
-    private final Logger logger = Logger.getLogger(UserDaoHibernateImpl.class.getName());
+    private static final SessionFactory sessionFactory = Util.Hibernate.getSessionFactory();
+    private static final Logger logger = Logger.getLogger(UserDaoHibernateImpl.class.getName());
 
 
     @Override

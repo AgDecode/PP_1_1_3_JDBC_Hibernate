@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class UserDaoJDBCImpl implements UserDao {
-    private final Connection connection = Util.MySql.getConnection();
+    private static final Connection connection = Util.MySql.getConnection();
     private static final Logger logger = Logger.getLogger(UserDaoJDBCImpl.class.getName());
 
 
